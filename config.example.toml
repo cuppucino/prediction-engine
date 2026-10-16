@@ -1,0 +1,22 @@
+# Copy via: python3 -m prediction_engine init
+# Fill the numeric OANDA DEMO login shown in MT5. Never put a password here.
+account_login = 0
+# Verify the exact spelling in your terminal; no automatic server substitution.
+account_server = "OANDA_Global-Demo-1"
+# Exact names shown in Market Watch. Use EURUSD.sml / XAUUSD.sml when applicable.
+# Set the EA's EURUSDSymbol / XAUUSDSymbol inputs to these same names.
+eurusd_symbol = "EURUSD"
+xauusd_symbol = "XAUUSD"
+port = 8787
+database = "data/engine.sqlite3"
+
+# Fractions of actual current account equity, in its actual currency.
+# These are also the EA's hard upper bounds. You can lower them here.
+risk_fraction = 0.0025
+aggregate_risk_fraction = 0.005
+daily_loss_fraction = 0.02
+max_margin_fraction = 0.20
+snapshot_max_age = 15
+tick_max_age = 5
+spread_stop_fraction = 0.08
+drift_stop_fraction = 0.10

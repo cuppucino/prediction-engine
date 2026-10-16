@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+config.toml
+data/
+build/
+*.ex5
+*.set
+*.sqlite3
+*.sqlite3-*
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.DS_Store
+.superpowers/

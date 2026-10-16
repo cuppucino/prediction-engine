@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prediction-engine"
+version = "0.1.0"
+description = "Local OANDA MT5 demo strategy engine with Telegram controls"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+prediction-engine = "prediction_engine.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["prediction_engine*"]
